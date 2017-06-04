@@ -26,13 +26,13 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Database configuration with mongoose
-var databaseUri = "mongodb://localhost/articleDB";
+var databaseUri = "mongodb://localhost/week18day3mongoose";
 
 if (process.env.MONGODB_URI) {
 
   mongoose.connect(process.env.envMONGODB_URI);
 } else {
-  
+
   mongoose.connect(databaseUri);
 }
 
@@ -156,7 +156,7 @@ app.post("/articles/:id", function(req, res) {
 });
 
 
-// Listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
+// Listen on port 8080
+app.listen(8080, function() {
+  console.log("App running on port 8080!");
 });
