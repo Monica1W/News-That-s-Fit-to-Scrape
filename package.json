@@ -1,7 +1,7 @@
 {
-  "name": "news",
+  "name": "newsthatisfittoscrape",
   "version": "1.0.0",
-  "description": "",
+  "description": "Homework 18-All the News That's Fit to Scrape",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,8 +21,10 @@
     "body-parser": "^1.17.2",
     "cheerio": "^1.0.0-rc.1",
     "express": "^4.15.3",
-    "mongoose": "^4.10.4",
-    "morgan": "^1.8.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.10.5",
+    "path": "^0.12.7",
     "request": "^2.81.0"
   }
 }
